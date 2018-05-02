@@ -1,0 +1,333 @@
+body {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8C6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
+
+#menu-bar {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 3px;
+    background-color: #C7A464;
+}
+
+.menu {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+.btn {
+    color: black;
+    font-size: 1.3em;
+    padding-top: 5px;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    margin-left: 1px;
+}
+
+.btn:hover {
+    background-color: #966F33;
+    color: white;
+}
+
+.active {
+    background-color: #966F33;
+    color: white;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 20px 20px;
+    ;
+    border: 1px solid #966F33;
+    background-color: #FFF8C6;
+}
+
+/*Header*/
+
+#main-header {
+    width: 100%;
+    height: 190px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 1em;
+}
+
+q {
+    font-size: 20px;
+}
+
+.logo {
+    padding-top: 30px;
+    border-right: 1px solid #966F33;
+}
+
+#info {
+    position: relative;
+    padding-top: 20px;
+}
+
+.info-text {
+    margin-bottom: 20px;
+}
+
+#info-checkout {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#info-return {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#info-history {
+    width: 100%;
+    height: 100%;
+}
+
+.order {
+    position: absolute;
+    top: 170px;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 26px;
+    border: 1px solid #966F33;
+    border-radius: 4px;
+}
+
+.order:hover {
+    background-color: #966F33;
+    color: white;
+}
+
+/*Main*/
+
+#catalogue-listing {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-row-gap: 1em;
+    grid-column-gap: 1.8em;
+}
+
+.book {
+    width: 250px;
+    border: 1px solid #966F33;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.book-img {
+    background-color: #FFF8C6;
+    background-size: cover;
+    width: 230px;
+    height: 300px;
+    margin: 0 0 15px;
+    transition: all .25s ease-in-out;
+}
+
+.book-img:hover {
+    transform: scale(1.04);
+}
+
+#catalogue-container {
+    margin: 30px 0;
+}
+
+.selected {
+    background-color: #966F33;
+    color: white;
+}
+
+/*History*/
+
+#checkout-history li {
+    list-style-type: none;
+}
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    height: 35px;
+    background-color: #966F33;
+    color: white;
+    padding: 9px 0 0 20px;
+    margin-top:5px;
+}
+
+/*BOOKS*/
+
+.pride-and-prejudice {
+    background-image: url('images/books/pride-and-prejudice.jpg');
+}
+
+.pride-and-prejudice-bw {
+    background-image: url('images/books/BW/pride-and-prejudice.jpg');
+}
+
+.fairy-tales {
+    background-image: url('images/books/fairy-tales.jpg');
+}
+
+.fairy-tales-bw {
+    background-image: url('images/books/BW/fairy-tales.jpg');
+}
+
+.one-hundred-years-of-solitude {
+    background-image: url('images/books/one-hundred-years-of-solitude.jpg');
+}
+
+.one-hundred-years-of-solitude-bw {
+    background-image: url('images/books/BW/one-hundred-years-of-solitude.jpg');
+}
+
+.moby-dick {
+    background-image: url('images/books/moby-dick.jpg');
+}
+
+.moby-dick-bw {
+    background-image: url('images/books/BW/moby-dick.jpg');
+}
+
+.hunger {
+    background-image: url('images/books/hunger.jpg');
+}
+
+.hunger-bw {
+    background-image: url('images/books/BW/hunger.jpg');
+}
+
+.wuthering-heights {
+    background-image: url('images/books/wuthering-heights.jpg');
+}
+
+.wuthering-heights-bw {
+    background-image: url('images/books/BW/wuthering-heights.jpg');
+}
+
+.the-trial {
+    background-image: url('images/books/the-trial.jpg');
+}
+
+.the-trial-bw {
+    background-image: url('images/books/BW/the-trial.jpg');
+}
+
+.to-the-lighthouse {
+    background-image: url('images/books/to-the-lighthouse.jpg');
+}
+
+.to-the-lighthouse-bw {
+    background-image: url('images/books/BW/to-the-lighthouse.jpg');
+}
+
+.ulysses {
+    background-image: url('images/books/ulysses.jpg');
+}
+
+.ulysses-bw {
+    background-image: url('images/books/BW/ulysses.jpg');
+}
+
+.the-decameron {
+    background-image: url('images/books/the-decameron.jpg');
+}
+
+.the-decameron-bw {
+    background-image: url('images/books/BW/the-decameron.jpg');
+}
+
+.the-divine-comedy {
+    background-image: url('images/books/the-divine-comedy.jpg');
+}
+
+.the-divine-comedy-bw {
+    background-image: url('images/books/BW/the-divine-comedy.jpg');
+}
+
+.the-possessed {
+    background-image: url('images/books/the-possessed.jpg');
+}
+.the-possessed-bw {
+    background-image: url('images/books/BW/the-possessed.jpg');
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3.4rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+    line-height: 1.25;
+    letter-spacing: -.1rem;
+}
+
+h3 {
+    font-size: 2.1rem;
+    line-height: 0.2;
+    letter-spacing: -.06rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+    line-height: 0;
+    letter-spacing: -.08rem;
+}
+
+h5 {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+}

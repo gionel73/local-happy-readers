@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Happy Readers Society</title>
+</head>
+
+<body>
+    <menu id="menu-bar">
+        <div class="menu">
+            <div id="btn-history" class="btn">History</div>
+            <div id="btn-return" class="btn">Return</div>
+            <div id="btn-checkout" class="btn">Checkout</div>
+        </div>
+    </menu>
+    <div class="main-container">
+        <header id="main-header">
+            <div class="logo">
+                <h1>Happy Readers Club</h1>
+                <q>Whenever you read a good book, somewhere in the world a door opens to allow in more light.</q>
+            </div>
+            <div id="info">
+                <div id="info-checkout">
+                    <h4>Selected Books</h4>
+                    <div class="info-text">You can borrow maximum 3 books.</div>
+                    <div id="checkout"></div>
+                    <div id="btn-order" class="order">Borrow</div>
+                </div>
+                <div id="info-return">
+                    <h4>Return Books</h4>
+                    <div class="info-text">You have to return:</div>
+                    <div id="return"></div>
+                    <div id="btn-return-books" class="order">Return</div>
+                </div>
+                <div id="info-history">
+                    <h4>Last Action</h4>
+                    <div class="info-text">The list of books:</div>
+                    <div id="history"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="catalogue-container">
+                <h2>Books in stock</h2>
+                <div id="catalogue-listing">
+                    <div data-book="Pride and Prejudice" class="book">
+                        <div class="pride-and-prejudice book-img" data-img="Pride and Prejudice"></div>
+                        <div class="book-meta">
+                            <div class="title">Pride and Prejudice</div>
+                            <div class="year">1813</div>
+                            <div class="author">Jane Austen</div>
+                        </div>
+                    </div>
+                    <div data-book="Fairy Tales" class="book">
+                        <div class="fairy-tales book-img" data-img="Fairy Tales"></div>
+                        <div class="book-meta">
+                            <div class="title">Fairy Tales</div>
+                            <div class="year">1836</div>
+                            <div class="author">Hans Christian Andersen</div>
+                        </div>
+                    </div>
+                    <div data-book="One Hundred Years of Solitude" class="book">
+                        <div class="one-hundred-years-of-Solitude book-img" data-img="One Hundred Years of Solitude"></div>
+                        <div class="book-meta">
+                            <div class="title">One Hundred Years of Solitude</div>
+                            <div class="year">1967</div>
+                            <div class="author">Gabriel Garcia Marquez</div>
+                        </div>
+                    </div>
+                    <div data-book="Moby Dick" class="book">
+                        <div class="moby-dick book-img" data-img="Moby Dick"></div>
+                        <div class="book-meta">
+                            <div class="title">Moby Dick</div>
+                            <div class="year">1851</div>
+                            <div class="author">Herman Melville</div>
+                        </div>
+                    </div>
+                    <div data-book="Hunger" class="book">
+                        <div class="hunger book-img" data-img="Hunger"></div>
+                        <div class="book-meta">
+                            <div class="title">Hunger</div>
+                            <div class="year">1890</div>
+                            <div class="author">Knut Hamsun</div>
+                        </div>
+                    </div>
+                    <div data-book="Wuthering Heights" class="book">
+                        <div class="wuthering-heights book-img" data-img="Wuthering Heights"></div>
+                        <div class="book-meta">
+                            <div class="title">Wuthering Heights</div>
+                            <div class="year">1847</div>
+                            <div class="author">Emily Brontë</div>
+                        </div>
+                    </div>
+                    <div data-book="The Trial" class="book">
+                        <div class="the-trial book-img" data-img="The Trial"></div>
+                        <div class="book-meta">
+                            <div class="title">The Trial</div>
+                            <div class="year">1925</div>
+                            <div class="author">Franz Kafka</div>
+                        </div>
+                    </div>
+                    <div data-book="To the Lighthouse" class="book">
+                        <div class="to-the-lighthouse book-img" data-img="To the Lighthouse"></div>
+                        <div class="book-meta">
+                            <div class="title">To the Lighthouse</div>
+                            <div class="year">1927</div>
+                            <div class="author">Virginia Woolf</div>
+                        </div>
+                    </div>
+                    <div data-book="Ulysses" class="book">
+                        <div class="ulysses book-img" data-img="Ulysses"></div>
+                        <div class="book-meta">
+                            <div class="title">Ulysses</div>
+                            <div class="year">1922</div>
+                            <div class="author">James Joyce</div>
+                        </div>
+                    </div>
+                    <div data-book="The Decameron" class="book">
+                        <div class="the-decameron book-img" data-img="The Decameron"></div>
+                        <div class="book-meta">
+                            <div class="title">The Decameron</div>
+                            <div class="year">1351</div>
+                            <div class="author">Giovanni Boccaccio</div>
+                        </div>
+                    </div>
+                    <div data-book="The Divine Comedy" class="book">
+                        <div class="the-divine-comedy book-img" data-img="The Divine Comedy"></div>
+                        <div class="book-meta">
+                            <div class="title">The Divine Comedy</div>
+                            <div class="year">1315</div>
+                            <div class="author">Dante Alighieri</div>
+                        </div>
+                    </div>
+                    <div data-book="The Possessed" class="book">
+                        <div class="the-possessed book-img" data-img="The Possessed"></div>
+                        <div class="book-meta">
+                            <div class="title">The Possessed</div>
+                            <div class="year">1872</div>
+                            <div class="author">Fyodor Dostoevsky</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <h4>History</h4>
+        <div id="history-list"></div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            FII PRACTIC - Maxcode &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2018 - Happy Readers Club by Ionel Gotcu - Final Project
+        </div>
+    </footer>
+</body>
+
+</html>

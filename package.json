@@ -1,0 +1,30 @@
+{
+  "name": "happy-readers",
+  "version": "1.0.0",
+  "description": "happy-readers app",
+  "scripts": {
+    "test": "cd test && karma start",
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "start": "npm run build"
+  },
+  "author": "Ionel Gotcu",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-spec-reporter": "0.0.32",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "moment": "^2.22.1",
+    "serve": "^6.5.6"
+  },
+  "engines": {
+    "node": "8.9.4"
+  }
+}
